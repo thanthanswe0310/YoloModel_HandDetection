@@ -2,13 +2,13 @@ from ultralytics import YOLO
 import cv2
 
 # Load the object detection model
-od_model = YOLO('/home/tricubics/Desktop/Computer_Vision_TTS/Hand_Detection_In_Yolov8/yolov8_hand_detection/YOLOv8-pt/best_latest_hand.pt')
+od_model = YOLO('/../Hand_Detection_In_Yolov8/yolov8_hand_detection/YOLOv8-pt/best_latest_hand.pt')
 
 # Load the image classification model
-ic_model =  YOLO('/media/tricubics/SSD_DATA/hand_and_tracking_test/best.pt')
+ic_model =  YOLO('/../hand_and_tracking_test/best.pt')
 
 # Load your image
-image_path = '/home/tricubics/Desktop/13_09_2024/KI1AEJ1000C7980734F00AEC3DF3E/video2/20240826_190311_091.jpg'
+image_path = '/../13_09_2024/KI1AEJ1000C7980734F00AEC3DF3E/video2/20240826_190311_091.jpg'
 
 image = cv2.imread(image_path)
 
