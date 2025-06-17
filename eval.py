@@ -1,10 +1,10 @@
 from ultralytics import YOLO
 
 # Load a pretrained model
-model = YOLO(r'/home/tricubics/Desktop/Computer_Vision_TTS/Hand_Detection_In_Yolov8/yolov8_hand_detection/YOLOv8-pt/best_21_09_2024.pt') 
+model = YOLO(r'/../Hand_Detection_In_Yolov8/yolov8_hand_detection/YOLOv8-pt/best_21_09_2024.pt') 
 
 # Evaluate the model on a validation dataset
-results = model.train(data=r'/home/tricubics/Desktop/Computer_Vision_TTS/Hand_Detection_In_Yolov8/yolov8_hand_detection/YOLOv8-pt/data/data.yaml',epochs=2)
+results = model.train(data=r'/../Hand_Detection_In_Yolov8/yolov8_hand_detection/YOLOv8-pt/data/data.yaml',epochs=2)
 
 # Print the entire results to inspect the available attributes
 print(results)
@@ -54,7 +54,7 @@ print(f"F1-Score (as a form of accuracy): {f1_score:.3f}")
 #     return left_hand_count, right_hand_count
 
 # # Directory containing YOLOv8 label files
-# yolo_labels_dir = r'/home/tricubics/Desktop/Computer_Vision_TTS/Hand_Detection_In_Yolov8/yolov8_hand_detection/YOLOv8-pt/data/train/labels'
+# yolo_labels_dir = r'/../Hand_Detection_In_Yolov8/yolov8_hand_detection/YOLOv8-pt/data/train/labels'
 
 # left_hand_count, right_hand_count = count_hands(yolo_labels_dir)
 
